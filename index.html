@@ -86,14 +86,14 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
 
             Cette commande sert de facon generale a annuler les modifications apportees depuis la derniere mise à jour,
             <br> en ajoutant l'option --hard. Là faites bien attention, c'est irreversible par contre ! Par exemple, si j'ai modifier index.php mais que je souhaite annuler mes modifications, je ferai </p>
-        <br> &#9733  git reset --hard index.php</div>
+        <br> &#9733 git reset --hard index.php</div>
 
 
 
 
 
     <div>
-        <p  >Si vous voulez seulement arreter le suivi d'un fichier, sans le supprimer,
+        <p>Si vous voulez seulement arreter le suivi d'un fichier, sans le supprimer,
             <br>vous devez utiliser l'option --cached. Cela conserve votre fichier local mais arrete son suivi. Exemple :</p>
         <br> &#9733 git rm --cached fichier_prive </div>
 
@@ -103,11 +103,36 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
 
     <div>
         <p>vous donne un diff unifier entre votre copie de travail et la derniere revision recuperee de votre branche.</p>
-        <br>    &#9733 git diff </div>
+        <br> &#9733 git diff </div>
 
 
-<h2 id="gras"> Partager ses modifications</h2>
-&#9733;
+    <h2 id="gras"> Partager ses modifications</h2> &#9733;
+
+
+    <p id="mod">Maintenant, vous pouvez enfin envoyer vos modifications. Commencez par faire un commit
+        <br> Pour envoyer vos modifications, rien de plus simple </p>
+    <div>&#9733; git commit -m "Le message de commit, vous savez celui qui apparait dans git log ?"</div>
+
+    <p id="mod">Si vous ne voulez envoyer que certains fichiers,
+        <br> ajoutez derriere le message de commit la liste des fichiers ainsi </p>
+    <div> &#9733; git commit -m "Le message de commit." fichier1 fichier2</div>
+
+
+    <p id="mod">Normalement, vous devez passer par &#9733;<strong>git add</strong>&#9733; pour chacun des fichiers que vous avez modifié,
+        <br> mais il existe un raccourci bien pratique,
+        <br> l'option -a qui ajoutera automatiquement tous les fichiers modifiés déjà suivis
+        <br> (donc pas les nouveaux fichiers, attention !).</p>
+
+         <div> &#9733; git commit -am "Le message de commit."</div>
+
+
+
+
+  <p> Vous pouvez omettre l'option -m, votre editeur favori s'ouvrira<br> alors pour que vous puissiez rentrer un message de commit.<br>Quand vous utiliserez les branches, faites bien attention à verifier<br> dans quelle branche vous envoyez vos modifications en faisant un &#9733; git branch  &#9733;
+
+
+
+
 
 
 </html>
