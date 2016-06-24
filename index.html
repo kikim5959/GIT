@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>GIT SHEET </title>
+
+<link rel="stylesheet" href="style.css" />
+
+<head>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+    <h2>A propos</h2>
+
+    <p><strong>git-flow est un ensemble d'extensions git permettant des operation de haut niveau<br> sur un depot pour appliquer le modele de la branche <br> &#9733; &#9733; &#9733</p>
+
+
+    <h2>Conseils de base</h2>
+
+    <p><strong>Les commandes et sorties de Git-flow apportent une aide precieuse.<br> Lisez les attentivement pour comprendre< ce qui se passe...<br>
+  Le logiciel pour OSX Sourcetree est une excellente interface graphique pour git qui supporte git-flow.</br>
+  Git-flow est une solution basee sur les fusions (merge). Elle n'effectue pas de rebase sur les branches de fonctionaliter<br> &#9733; &#9733; &#9733
+
+  <h2>Installation</h2>
+
+  <p><strong>sudo apt-get install git-core gitk <br>&#9733; &#9733; &#9733 </p>
+
+
+
+
+
+<p><strong>Configurer Git
+
+Maintenant que Git est installer, vous devriez avoir une console ouverte</br> dans laquelle vous allez pouvoir taper des commandes de Git.
+
+Dans la console, commencez par envoyer ces trois lignes :</strong></p>
+
+
+
+
+
+    <div>
+        <p>git config --global color.diff auto</p>
+        <p>git config --global color.status auto</p>
+        <p>git config --global color.branch auto</p>
+    </div>
+
+    <h3>Elles activeront la couleur dans Git. Il ne faut le faire que une fois,et ca aide a la lisibiliter des messages dans la console.</h3>
+
+
+    <h2>Ajouter et supprimer des fichiers</h2>
+
+
+
+    <div>
+        <p>L'ajout d'un fichier s'effectue, comme vu un peu plus haut,avec la commande</p>
+        <br> - git add nom_du_fichier</p>
+    </div>
+
+
+    <div>
+        <p>Pour retirer un fichier du suivi, faites</p>
+        <br> - git rm chemin_vers_le_fichier </div>
+
+
+
+    <div>
+        <p>Son statut sera maintenant 'deleted'. Attention, il sera egalement supprimer de votre copie locale ! En cas de mauvaise manipulation, faites, pour faire reapparaître le fichier :</p>
+        <br> git reset chemin_vers_le_fichier</div>
+
+
+
+
+
+
+
+    <div>
+        <p>
+
+            Cette commande sert de facon generale a annuler les modifications apportees depuis la derniere mise à jour,
+            <br> en ajoutant l'option --hard. Là faites bien attention, c'est irreversible par contre ! Par exemple, si j'ai modifier index.php mais que je souhaite annuler mes modifications, je ferai </p>
+        <br> - git reset --hard index.php</div>
+
+
+
+
+
+    <div>
+        <p  >Si vous voulez seulement arreter le suivi d'un fichier, sans le supprimer,
+            <br>vous devez utiliser l'option --cached. Cela conserve votre fichier local mais arrete son suivi. Exemple :</p>
+        <br> git rm --cached fichier_prive </div>
+
+
+
+
+
+    <div>
+        <p>vous donne un diff unifier entre votre copie de travail et la derniere revision recuperee de votre branche.</p>
+        <br>    - git diff </div>
+
+
+<h2 id="gras"> Partager ses modifications</h2>
+
+
+</html>
