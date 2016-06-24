@@ -40,13 +40,22 @@
 
 
  ol {
-   color : yellow;
+   color : white;
 
  }
 
 
 
 ul {
-color : yellow;
+color : white;
 text-align: center;
+}
+
+
+
+h4 {
+
+color : white;
+text-align: center;
+
 }

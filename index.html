@@ -170,15 +170,69 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
             <br>
             <li>2 seulement creer la branche, rester sur la branche actuelle
                 <br>taper &#9733; git branch ma_super_branche </li>
-                <br>
-                <br>
-                <li>3 Afficher les branche distante
-                  <br>taper &#9733; git branch -a </li>
+            <br>
+            <br>
+            <li>3 Afficher les branche distante
+                <br>taper &#9733; git branch -a </li>
+
+
+
+            <p> A present, si vous voulez travailler sur une des branches presentes sur GitHub,
+                <br> il vous faut creer une branche locale qui sera liee à la branche distante.
+                <br>Cela se fait egalement avec la commande git branch
+                <br> (ou git checkout -b, en ajoutant un un argument, le nom de la branche distante</p>
+
+
+            <h4>&#9733;git checkout -b mwsaz origin/nom-de-votre-branch</h4>
+            <br>
+            <br>
+            <br>
+            <p> Ici, j'ai demander a creer une branche recherche calquee sur la branche recherche disante. Ainsi, quand je ferai git pull, ma branche locale sera mise a jour. On ne travaillera jamais sur des branches distantes.</p>
+
+
+            <p>Maintenant que vous avez une vague idee du concept de branches locales/distantes, vous devez vous demander comment envoyer une branche locale sur le serveur. On se place donc dans le cas ou vous voulez creer une nouvelle branche, qui n'existe
+                pas sur le serveur. Il vous faut tout dabord creer une branche locale, puis la pusher sur le serveur :</p>
 
 
 
 
+            <h4>&#9733 1 git checkout -b nom_de_la_branche # Creation de la branche locale</h4>
 
+
+            <p>Les branches peuvent etre fusionnees, supprimees,
+                <br> n'hesitez pas pour a en creer des que vous vous lancez dans un travail setendant sur plusieurs commits.
+                <br> Pour changer de branche, il vous faut faire git checkout nom_de_la_branche. Il faut que votre repertoire de travail soit propre, c'est à dire que git status naffiche aucun fichier comme modified. Un git branch vous indiquera à l'issue
+                de cette manipulation que vous vous trouvez sur nom_de_la_branche. Si vous souhaitez changer</p>
+
+            <h2>Fusionner des branches</h2>
+
+            <p>Pour fusionner toutes vos modifications avec la branche par defaut, assurez de n'avoir plus aucun fichier modifié en attente (faites un ''git status'' et assurez-vous qu'il ne renvoie rien).
+                <br> Puis passez à la branche par defaut, et enfin fusionnez les deux :</p>
+
+
+            <h4> &#9733 git checkout master</h4>
+            <h4>&#9733 git pull . nom_de_la_branche_à_merger</h4>
+
+
+
+            <p>Attendez, resolvez les conflits. Voila, votre branche de developpement a ete fusionnee dans votre branche par defaut.
+                <br> Vous pouvez aussi faire l'inverse. Si par exemple vous corrigez un bug dans la branche principale,
+                <br>il y a de fortes chances qu'il soit aussi dans les autres branches.
+                <br>Dans ce cas, vous devez vous placer dans la branche de developpement, et comme precedemment :</p>
+
+
+
+
+<h4>  &#9733 1 - git checkout ma_branche</h4>
+<h4>  &#9733 2 - git pull . master</h4>
+
+
+
+<h2 >Supprimer des branches</h2>
+
+<p>Pour supprimer une branche locale, il suffit de passer l'option -d a git branch </p>
+
+    <h4> &#9733 git branch -d ma_branche</h4>
 
 
 </html>
