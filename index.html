@@ -123,12 +123,58 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
         <br> l'option -a qui ajoutera automatiquement tous les fichiers modifiés déjà suivis
         <br> (donc pas les nouveaux fichiers, attention !).</p>
 
-         <div> &#9733; git commit -am "Le message de commit."</div>
+    <div> &#9733; git commit -am "Le message de commit."</div>
 
 
 
 
-  <p> Vous pouvez omettre l'option -m, votre editeur favori s'ouvrira<br> alors pour que vous puissiez rentrer un message de commit.<br>Quand vous utiliserez les branches, faites bien attention à verifier<br> dans quelle branche vous envoyez vos modifications en faisant un &#9733; git branch  &#9733;
+    <p> Vous pouvez omettre l'option -m, votre editeur favori s'ouvrira
+        <br> alors pour que vous puissiez rentrer un message de commit.
+        <br>Quand vous utiliserez les branches, faites bien attention à verifier
+        <br> dans quelle branche vous envoyez vos modifications en faisant un
+        <div>&#9733; git branch </div>
+
+
+        <p>A ce stade, les autres developpeurs ne savent pas que vous avez fait des modifications.
+            <br> Il va vous falloir faire un push. Là encore rien de plus simple :</p>
+
+        <div> &#9733;git push origin master</div>
+
+
+
+
+        <h2>Recuperer les modifications des autres</h2>
+        <p>Pour mettre à jour votre version locale, il va vous falloir lancer</p>
+        <div>&#9733;git pull </div>
+
+        < <p>Si vous travaillez sur une branche de test et qu'un developpeur modifie la branche master,
+            <br>vous ne serez pas affecter taper:</p>
+    <div> &#9733;git log --all fera tout de même apparaitre la modification).</div>
+
+
+
+
+    <h2>Creer des branches</h2>
+    <p>Pour visualiser la branche sur laquelle vous travaillez
+        <br> (important a faire avant un pull ou un push en cas de doute),</p>
+    <div>&#9733; git branch</div>
+
+
+
+
+    <ul>
+        <li>1 creer une nouvelle branche a partir de la revision actuelle et sy rendre
+            <br>taper &#9733;git checkout -b ma_super_branche</li>
+        <ul>
+            <br>
+            <br>
+            <li>2 seulement creer la branche, rester sur la branche actuelle
+                <br>taper &#9733; git branch ma_super_branche </li>
+                <br>
+                <br>
+                <li>3 Afficher les branche distante
+                  <br>taper &#9733; git branch -a </li>
+
 
 
 

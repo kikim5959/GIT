@@ -1,48 +1,52 @@
-h2 {
-color: ORANGE;
-font-family: fantasy;
-font-style: italic;
-font-weight:   bolder;
-font-size: 60px;
-text-align: center;
-
-}
-
-
-body {
-background-color: black;
-
-}
-
-
-p {
-color: green;
-text-align: center;
-font-weight: Gras;
-
-}
-
-
-
-h1 {
-color : red;
-text-transform: capitalize;
-}
-
-
+ h2 {
+     color: ORANGE;
+     font-family: fantasy;
+     font-style: italic;
+     font-weight: bolder;
+     font-size: 60px;
+     text-align: center;
+ }
+ body {
+     background-color: black;
+ }
+ p {
+     color: green;
+     text-align: center;
+     font-weight: Gras;
+ }
+ h1 {
+     color: orange;
+     text-transform: capitalize;
+ }
  div {
-   background-color:black;
-   color:#fff;
-   padding:15px;
-   border-bottom:5px solid red;
-   margin-bottom:15px;
+     background-color: black;
+     color: #fff;
+     padding: 15px;
+     border-bottom: 5px solid red;
+     margin-bottom: 29px;
+ }
+ #gras {
+     color: orange;
+     font-size: 30px;
+ }
 
-     }
+
+
+ #mod {
+
+  color : green;
+
+ }
+
+
+ ol {
+   color : yellow;
+
+ }
 
 
 
-     #gras {
-
-       color : red;
-       font-size: 30px;
-     }
+ul {
+color : yellow;
+text-align: center;
+}
