@@ -61,19 +61,19 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
 
     <div>
         <p>L'ajout d'un fichier s'effectue, comme vu un peu plus haut,avec la commande</p>
-        <br> - git add nom_du_fichier</p>
+        <br>  &#9733 git add nom_du_fichier</p>
     </div>
 
 
     <div>
         <p>Pour retirer un fichier du suivi, faites</p>
-        <br> - git rm chemin_vers_le_fichier </div>
+        <br>  &#9733 git rm chemin_vers_le_fichier </div>
 
 
 
     <div>
         <p>Son statut sera maintenant 'deleted'. Attention, il sera egalement supprimer de votre copie locale ! En cas de mauvaise manipulation, faites, pour faire reapparaître le fichier :</p>
-        <br> git reset chemin_vers_le_fichier</div>
+        <br>  &#9733 git reset chemin_vers_le_fichier</div>
 
 
 
@@ -86,7 +86,7 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
 
             Cette commande sert de facon generale a annuler les modifications apportees depuis la derniere mise à jour,
             <br> en ajoutant l'option --hard. Là faites bien attention, c'est irreversible par contre ! Par exemple, si j'ai modifier index.php mais que je souhaite annuler mes modifications, je ferai </p>
-        <br> - git reset --hard index.php</div>
+        <br>  &#9733 git reset --hard index.php</div>
 
 
 
@@ -95,7 +95,7 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
     <div>
         <p  >Si vous voulez seulement arreter le suivi d'un fichier, sans le supprimer,
             <br>vous devez utiliser l'option --cached. Cela conserve votre fichier local mais arrete son suivi. Exemple :</p>
-        <br> git rm --cached fichier_prive </div>
+        <br>  &#9733 git rm --cached fichier_prive </div>
 
 
 
@@ -103,10 +103,18 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
 
     <div>
         <p>vous donne un diff unifier entre votre copie de travail et la derniere revision recuperee de votre branche.</p>
-        <br>    - git diff </div>
+        <br>     &#9733 git diff </div>
 
 
 <h2 id="gras"> Partager ses modifications</h2>
 
+<p id="intro">
 
+Maintenant, vous pouvez enfin envoyer vos modifications. Commencez par faire un commit. Pour envoyer vos modifications<br> rien de plus simple :
+
+
+<p id="sa">  &#9733 git push origin master </p>
+
+
+</p>
 </html>
