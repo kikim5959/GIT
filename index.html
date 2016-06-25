@@ -17,7 +17,7 @@
 
 <body>
 
-    <h2>A propos</h2>
+    <h2 id="haut">A propos</h2>
 
     <p><strong>git-flow est un ensemble d'extensions git permettant des operation de haut niveau<br> sur un depot pour appliquer le modele de la branche <br> &#9733; &#9733; &#9733</p>
 
@@ -223,16 +223,67 @@ Dans la console, commencez par envoyer ces trois lignes :</strong></p>
 
 
 
-<h4>  &#9733 1 - git checkout ma_branche</h4>
-<h4>  &#9733 2 - git pull . master</h4>
+            <h4>  &#9733 1 - git checkout ma_branche</h4>
+            <h4>  &#9733 2 - git pull . master</h4>
 
 
 
-<h2 >Supprimer des branches</h2>
+            <h2>Supprimer des branches</h2>
 
-<p>Pour supprimer une branche locale, il suffit de passer l'option -d a git branch </p>
+            <p>Pour supprimer une branche locale, il suffit de passer l'option -d a git branch </p>
 
-    <h4> &#9733 git branch -d ma_branche</h4>
+            <h4> &#9733 git branch -d ma_branche</h4>
 
+
+            <p>
+
+                Cette commande ne fonctionnera que si cette branche a ete fusionner, sans quoi vous perdriez des commits. Pour la supprimer si elle contient des commits non fusionner, il faut utiliser l'option -D. En faisant cela, ferez disparaître les modifications
+                de cette branche qui n'ont pas ete fusionnees !.
+                <br> N'utilisez cette option que si vous savez ce que vous faites. Pour supprimer une branche distante, il y a deux etapes : supprimer votre branche locale, qui la suivait ; supprimer la branche distante.
+            </p>
+
+
+            <h4>  &#9733 1 - git branch -d ma_branche</h4>
+            <h4>  &#9733 2 - git push origin :ma_branche </h4>
+            <p>Vous pouvez aussi ne supprimer que la branche distante,
+                <br> la branche locale correspondante sera supprimer au prochain git gc.</p>
+
+
+
+            <h2>Maintenance</h2>
+
+
+            <p>Au fur et à mesure de vos commits, votre copie locale du depot s'encrasse : les fichiers sont stocker en piles, et il est bon de faire le ménage de temps en temps.
+                <br> Une commande (qui en combine plusieurs est la pour ca </p>
+
+
+
+            <h4>  &#9733 1 git gc</h4>
+
+
+
+            <p>Qui lance en fait, entre autres, git repack et git prune (gc = garbage collect).
+                <br> La premiere va recompresser les fichiers, et s'assurer que le depot n'est pas fragmente.<b> La deuxième permet de faire le menage dans les branches distantes non utiliser (suppression des branches locales de suivi qui pointent sur une branche distante supprimer).
+
+Cette commande n'affectera pas votre travail, elle rendra l'acces a votre depot local plus rapide, et diminuera l'espace occuper par le dossier .git.</p>
+
+                              <h2>Utiliser les tag</h2>
+
+                              <p>les tags permettent de donner un nom a une revision. Partout ou vous pouvez specifier un hash de revision (dans ''git log'' par exemple, mais aussi dans les commandes de checkout,de merge, etc),<br> au lieu de donner le-dit hash, vous pourrez donner un nom. Ce nom doit etre sans espaces, court et explicite de preference.<br> C'est un tag. Pour tagger une révision, rien de plus simple :</p>
+
+
+                              <h4>  &#9733 2 - git tag mon_tag</h4>
+
+                              <p id="mono"> mon_tag devient alors un alias pour la derniere revision envoyee dans la branche courante.<br> Comme pour les branches, on peut supprimer des tags avec l'option -d </p>
+
+
+
+<h1> Resumer Git </h1>
+<p id="po"> git est un logiciel de gestion de versions decentralise. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux<br>, et distribué selon les termes de la licence publique générale GNU version 2. En 2016,<br> il s’agit du logiciel de gestion de versions le plus populaire qui est utiliser par plus de douze millions de personnes4.<p/>
+<br>
+<br>
+<br>
+<h6> <a href="#haut">Haut de page</a><a href="https://twitter.com/aKIMOVITCHz" target="_blank" rel="external"><p>mon tweeter<img ="Logo" src="http://twitter-badges.s3.amazonaws.com/twitter-a.png" /></a></p>
+</h6>
 
 </html>
