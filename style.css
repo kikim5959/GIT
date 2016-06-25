@@ -1,11 +1,11 @@
- h2 {
-     color: ORANGE;
-     font-family: fantasy;
-     font-style: italic;
-     font-weight: bolder;
-     font-size: 60px;
-     text-align: center;
- }
+h2 {
+    color: ORANGE;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+}
  body {
      background-color: black;
  }
